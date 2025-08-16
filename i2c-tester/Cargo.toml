@@ -1,0 +1,21 @@
+[package]
+edition      = "2021"
+name         = "i2c-tester"
+rust-version = "1.86"
+version      = "0.1.0"
+
+[[bin]]
+name = "i2c-tester"
+path = "./src/bin/main.rs"
+
+[dependencies]
+esp-bootloader-esp-idf = { workspace = true }
+esp-hal                = { workspace = true }
+esp-alloc              = { workspace = true }
+esp-println            = { workspace = true }
+log                    = { workspace = true }
+embassy-executor       = { workspace = true }
+embassy-time           = { workspace = true }
+esp-hal-embassy        = { workspace = true }
+smoltcp                = { workspace = true }
+static_cell            = { workspace = true }

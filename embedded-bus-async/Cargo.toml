@@ -1,0 +1,16 @@
+[package]
+name = "embedded-bus-async"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+authors = ["Marcell Kovacs", "Gemini"]
+categories = ["embedded", "no-std", "async"]
+keywords = ["embedded-hal", "bus", "spi", "i2c"]
+description = "Asynchronous shared bus implementations for embedded-hal."
+
+[dependencies]
+embassy-sync = { workspace = true }
+embedded-hal = { workspace = true }
+embedded-hal-async = { workspace = true }
+esp-hal = { workspace = true }
+log = { workspace = true }

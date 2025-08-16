@@ -1,0 +1,32 @@
+[package]
+name = "t-deck-pro-battery-async"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.86"
+
+[[example]]
+name = "simple_battery"
+path = "examples/simple_battery.rs"
+
+[dependencies]
+embedded-graphics = {workspace = true}
+embassy-time = {workspace = true}
+embedded-hal-async = {workspace = true}
+esp-hal = {workspace = true}
+heapless = {workspace = true}
+log = {workspace = true}
+
+[dev-dependencies]
+critical-section = {workspace = true}
+embassy-executor = {workspace = true}
+embassy-net = {workspace = true}
+embedded-io = {workspace = true}
+embedded-io-async = {workspace = true}
+esp-alloc = {workspace = true}
+esp-bootloader-esp-idf = {workspace = true}
+esp-hal-embassy = {workspace = true}
+esp-println = {workspace = true}
+smoltcp = {workspace = true}
+static_cell = {workspace = true}
+
+

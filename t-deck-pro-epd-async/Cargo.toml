@@ -1,0 +1,44 @@
+[package]
+edition      = "2021"
+name         = "t-deck-pro-epd-async"
+rust-version = "1.86"
+version      = "0.1.0"
+license      = "Apache-2.0"
+authors      = ["Gemini", "Marcell Kovacs"]
+categories   = ["embedded", "no-std", "async"]
+keywords     = ["esp32", "t-deck", "e-paper", "embedded-graphics"]
+
+[lib]
+name = "t_deck_pro_epd_async"
+path = "src/lib.rs"
+
+[[example]]
+name = "simple_example"
+path = "examples/simple_example.rs"
+
+[dependencies]
+embassy-sync = { workspace = true }
+embedded-bus-async = { path = "../embedded-bus-async" }
+log = { workspace = true }
+embassy-time = { workspace = true }
+embassy-futures = { workspace = true }
+embedded-graphics = { workspace = true }
+embedded-hal-async = { workspace = true }
+esp-hal = { workspace = true }
+
+[dev-dependencies]
+critical-section = {workspace = true}
+embassy-executor = {workspace = true}
+embassy-net = {workspace = true}
+embedded-io = {workspace = true}
+embedded-io-async = {workspace = true}
+esp-alloc = {workspace = true}
+esp-bootloader-esp-idf = {workspace = true}
+esp-hal-embassy = {workspace = true}
+esp-println = {workspace = true}
+heapless = {workspace = true}
+smoltcp = {workspace = true}
+static_cell = {workspace = true}
+
+
+

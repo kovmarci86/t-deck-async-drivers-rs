@@ -1,0 +1,39 @@
+[package]
+edition      = "2021"
+name         = "t-deck-pro-gps-async"
+rust-version = "1.86"
+version      = "0.1.0"
+license      = "Apache-2.0"
+
+[dependencies]
+chrono = {workspace = true}
+embassy-executor = {workspace = true}
+embassy-time = {workspace = true}
+esp-alloc = {workspace = true}
+esp-hal = {workspace = true}
+esp-hal-embassy = {workspace = true}
+esp-println = {workspace = true}
+heapless = {workspace = true}
+log = {workspace = true}
+nmea = {workspace = true}
+smoltcp = {workspace = true}
+t-deck-pro-keyboard-async = {workspace= true}
+embassy-futures = {workspace=true}
+
+[dev-dependencies]
+critical-section = {workspace = true}
+embassy-executor = {workspace = true}
+embassy-net = {workspace = true}
+embedded-io = {workspace = true}
+embedded-io-async = {workspace = true}
+esp-alloc = {workspace = true}
+esp-bootloader-esp-idf = {workspace = true}
+esp-hal-embassy = {workspace = true}
+esp-println = {workspace = true}
+smoltcp = {workspace = true}
+static_cell = {workspace = true}
+
+[[example]]
+name = "simple_gps"
+path = "examples/simple_gps.rs"
+
